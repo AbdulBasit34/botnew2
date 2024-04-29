@@ -4,8 +4,7 @@
   <name>botnew2</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="abdulbasit_se21b1_047@dtu.ac.in
-  ">Abdul Basit</maintainer>
+  <maintainer email="abdulbasit_se21b1_047@dtu.ac.in">Abdul Basit</maintainer>
   <license>TODO: License declaration</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
