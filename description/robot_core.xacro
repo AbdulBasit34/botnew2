@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="inertial_macros.xacro"/>
     <material name="white">
         <color rgba="1 1 1 1"/>
     </material>
@@ -33,14 +34,14 @@
             </geometry>
             <material name="white"/>
         </visual>
+
         <collision>
-            <collision>
                 <origin xyz="0.15 0 0.075" rpy="0 0 0"/>
                 <geometry>
                     <box size="0.3 0.3 0.15"/>
                 </geometry>
-            </collision>
         </collision>
+        
     </link>
     <!-- LEFT WHEEL -->
 
@@ -58,6 +59,12 @@
         </geometry>
         <material name="blue"/>
     </visual>
+    <collision>
+        <geometry>
+            <cylinder length="0.04" radius="0.05" />
+        </geometry>
+        <material name="blue"/>
+    </collision>
 </link>
 <!-- RIGHT WHEEL -->
 
@@ -75,6 +82,12 @@
         </geometry>
         <material name="blue"/>
     </visual>
+    <collision>
+        <geometry>
+            <cylinder length="0.04" radius="0.05" />
+        </geometry>
+        <material name="blue"/>
+    </collision>
 </link>
 <!-- CASTER WHEEL -->
 
@@ -91,6 +104,12 @@
         </geometry>
         <material name="black"/>
     </visual>
+    <collision>
+        <geometry>
+            <sphere radius="0.05" />
+        </geometry>
+        <material name="black"/>
+    </collision>
 </link>
 
 </robot>
