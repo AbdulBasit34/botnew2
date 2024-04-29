@@ -130,8 +130,11 @@
         <material name="black"/>
     </collision>
 </link>
+
 <gazebo reference="caster_wheel">
     <material>Gazebo/Black</material>
+    <mu1 value="0.001"/>
+    <mu2 value="0.001"/>
 </gazebo>
 
 </robot>
